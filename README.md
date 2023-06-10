@@ -21,8 +21,8 @@
 
 #### 参数修改
 1.  修改Springboot文件夹下的springboot\springboot\src\main\resources\application.yml文件
-`
-server:
+
+`server:
   port: 9090  #服务器端口
 
 spring:
@@ -39,5 +39,4 @@ mybatis-plus:
 files:
   upload:
     path: C:/Users/12087/Desktop/项目/campus/files/  #文件上传地址
-
 `
