@@ -45,14 +45,14 @@ files:
 #### 用户界面
 ##### 1.localhost:8080  
 ###### 1.1用户系统打卡登录页面
-<img src="https://img-blog.csdnimg.cn/e2c9d7944e734f42af8a432f4ad3fe03.jpeg">
+
 ###### 1.2注册界面
-<img src="https://img-blog.csdnimg.cn/56f9c0cd74a54e46a7f79733da24f241.jpeg">
+
 ###### 1.3首页界面
-<img src="https://img-blog.csdnimg.cn/f79482a96800410a944d76d04ede3aea.jpeg">
+
 ###### 1.4景点界面
-<img src="https://img-blog.csdnimg.cn/a8396ed9e8774e39967a2833e8357ca1.jpeg">
+
 ###### 1.5留言界面
-<img src="https://img-blog.csdnimg.cn/01f4dc6d50944eec9e0edc2427225571.jpeg">
+
 
 ##### 2.localhost:8080/admin/login    
