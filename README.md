@@ -22,21 +22,20 @@
 #### 参数修改
 1.  修改Springboot文件夹下的springboot\springboot\src\main\resources\application.yml文件
 
-`server:
-  port: 9090  #服务器端口
-
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/campus?serverTimezone=GMT%2b8  #数据库地址
-    username: root   #数据库用户名
-    password: 123456  #数据库用户密码
-mybatis:
-  mapper-locations: classpath:mapper/*.xml
-mybatis-plus:
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-files:
-  upload:
-    path: C:/Users/12087/Desktop/项目/campus/files/  #文件上传地址
-`
+    server:
+      port: 9090  #服务器端口
+    
+    spring:
+      datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3307/campus?serverTimezone=GMT%2b8  #数据库地址
+        username: root   #数据库用户名
+        password: 123456  #数据库用户密码
+    mybatis:
+      mapper-locations: classpath:mapper/*.xml
+    mybatis-plus:
+      configuration:
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    files:
+      upload:
+        path: C:/Users/12087/Desktop/项目/campus/files/  #文件上传地址
