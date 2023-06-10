@@ -4,34 +4,40 @@
 这是湖州师范学院景点打卡系统前后端代码
 
 #### 软件架构
-软件架构说明
+本系统前端采用VUE框架搭建，后端采用Spring Boot框架搭建，数据库采用MySQL
 
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  本项目需提前安装VUE、node.js springboot环境
+2.  下载代码 git clone [URL]
+3.  VUE文件夹为前端代码 Springboot文件夹为后端代码 campus.sql为数据库文件
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  打开VUE文件 `npm run server` 运行前端代码
+2.  数据库工具打开campus.sql创建数据库campus
+3.  IDEA打开Sprintboot文件并运行
 
-#### 参与贡献
+#### 参数修改
+1.  修改Springboot文件夹下的springboot\springboot\src\main\resources\application.yml文件
+`
+server:
+  port: 9090  #服务器端口
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/campus?serverTimezone=GMT%2b8  #数据库地址
+    username: root   #数据库用户名
+    password: 123456  #数据库用户密码
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+files:
+  upload:
+    path: C:/Users/12087/Desktop/项目/campus/files/  #文件上传地址
 
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+`
