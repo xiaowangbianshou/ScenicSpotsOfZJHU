@@ -39,3 +39,6 @@
     files:
       upload:
         path: C:/Users/12087/Desktop/项目/campus/files/  #文件上传地址
+
+
+<img decoding="async" src="http://static.runoob.com/images/runoob-logo.png" width="50%">
