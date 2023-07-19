@@ -1,0 +1,18 @@
+{
+    "app": {
+        "name": "HUZU-GUIDE",
+        "title": "HUZU-GUIDE",
+        "version": "1.0.0"
+    },
+    "api": {
+        "url": "https://www.likegis.com/api/guide"
+    },
+    "map": {
+        "type": "amap",
+        "center": {
+            "lng": 120.131063,
+            "lat": 30.873496
+        },
+        "zoom": 16
+    }
+}

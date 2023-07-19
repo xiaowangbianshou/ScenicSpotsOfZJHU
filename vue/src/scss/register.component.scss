@@ -1,0 +1,81 @@
+.register-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.register-body {
+    height: 100%;
+    width: 100%;
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.register-panel {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.register-logo {
+    width: 280px;
+    height: 100px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    font-size: 50px;
+    .register-logo-i,
+    .register-logo-huzu {
+        font-family: fantasy;
+    }
+    .register-logo-love {
+        color: red;
+    }
+}
+
+.register-logo::before {
+    content: '';
+    position: absolute;
+    width: 280px;
+    height: 100px;
+    background: linear-gradient(to right, #4460f1, #c471ed, #f64f59);
+    filter: blur(70px);
+}
+
+.register-form {
+    position: absolute;
+    top: 8%;
+    right: 50px;
+    bottom: 50px;
+    width: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 170px 330px;
+}
+
+.register-footer {
+    height: 50px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    &>a {
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+.forget-pwd {
+    font-size: 10px;
+}
+
+.password-group {
+    padding-left: 70px !important;
+    .forget-pwd {
+        padding-left: 10px;
+    }
+}

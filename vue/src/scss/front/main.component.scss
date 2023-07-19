@@ -1,0 +1,47 @@
+.main-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    .main-header {
+        padding: 0px 30px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        .logo {
+            display: grid;
+            align-items: center;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            font-size: 20px;
+            .logo-i,
+            .logo-huzu {
+                font-family: fantasy;
+            }
+            .logo-love {
+                color: red;
+            }
+        }
+        .menu {
+            justify-self: center;
+            a {
+                text-decoration: none;
+            }
+        }
+        .avatar {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            grid-gap: 15px;
+            .avatar-image {
+                height: 36px;
+                width: 36px;
+                border-radius: 50%;
+            }
+            .avatar-user {
+                cursor: pointer;
+            }
+        }
+    }
+    .main-body {
+        height: 100%;
+    }
+}
